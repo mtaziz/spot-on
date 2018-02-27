@@ -1,8 +1,8 @@
-## This is the project for Software Engineer
+# This is the project for Software Engineer
 
-### How to set up the development environment
+## How to set up the development environment
 
-#### Setting up a virtualenv with python3
+### Setting up a virtualenv with python3
 
 If you don't have **Python 3** installed, you will need to do it!
 
@@ -25,7 +25,7 @@ workon spot-on
 ```
 to start the virtualenv.
 
-#### Install Django
+### Install Django
 Type
 ```
 pip install Django==2.0.2
