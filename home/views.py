@@ -5,10 +5,10 @@ from .models import Product
 
 
 def index(request):
-    products = Product.objects.all()
+    products_list = Product.objects.all()
 
-    paginator = Paginator(products, 25)
+    paginator = Paginator(products_list, 25)
 
     page = request.GET.get('page')
-    contacts = paginator.get_page(page)
+    products = paginator.get_page(page)
     return render(request, 'home/index.html', {'products': products})
