@@ -1,4 +1,11 @@
 jQuery(function($) {
+    // $('.container').infiniteScroll({
+    //   // options
+    //   path: '.pagination__next',
+    //   append: '.post',
+    //   history: false,
+    // });
+
     $.getJSON("http://127.0.0.1:8000/static/data.json", function(result) {
         $.each(result, function(i, field) {
             var product_name = field.product_name;
