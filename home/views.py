@@ -1,15 +1,14 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-import json
+from .models import Product
 
 
 def index(request):
-    with open('data.json', 'r') as json_data:
-        products = json.load(json_data)
+    products = Product.objects.all()
 
-        paginator = Paginator(products, 25)
+    paginator = Paginator(products, 25)
 
-        page = request.GET.get('page')
-        contacts = paginator.get_page(page)
-        return render(request, 'home/index.html', {'products': products})
+    page = request.GET.get('page')
+    contacts = paginator.get_page(page)
+    return render(request, 'home/index.html', {'products': products})
