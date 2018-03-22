@@ -29,7 +29,7 @@
 
 
             <div class="search-box-container">
-                <input class="search-box"/>
+                <input class="search-box" placeholder="What's on your mind?"/>
             </div>
 
             <div class="mdl-grid result-area">
@@ -41,7 +41,7 @@
                                 <img src="{{ product.product_image_url }}">
                             </div>
                             <div class="mdl-card__supporting-text">
-                                <h2>{{ product.product_name }}</h2>
+                                <h2 class="product-name">{{ product.product_name }}</h2>
                                 <p>{{ product.product_subtitle }}</p>
                             </div>
                             <div class="mdl-card__actions mdl-card--border">
@@ -52,24 +52,24 @@
                         </div>
                     </div>
                 {% endfor %}
+            </div>
 
-                <div class="pagination">
-                    <span class="step-links">
-                        {% if products.has_previous %}
-                            <a href="?page=1">&laquo; first</a>
-                            <a href="?page={{ products.previous_page_number }}">previous</a>
-                        {% endif %}
+            <div class="pagination">
+                <span class="step-links">
+                    {% if products.has_previous %}
+                        <a href="?page=1">&laquo; first</a>
+                        <a href="?page={{ products.previous_page_number }}">previous</a>
+                    {% endif %}
 
-                        <span class="current">
-                            Page {{ products.number }} of {{ products.paginator.num_pages }}.
-                        </span>
-
-                        {% if products.has_next %}
-                            <a href="?page={{ products.next_page_number }}">next</a>
-                            <a href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
-                        {% endif %}
+                    <span class="current">
+                        Page {{ products.number }} of {{ products.paginator.num_pages }}.
                     </span>
-                </div>
+
+                    {% if products.has_next %}
+                        <a href="?page={{ products.next_page_number }}">next</a>
+                        <a href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
             </div>
 
 
