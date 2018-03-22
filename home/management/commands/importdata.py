@@ -14,7 +14,7 @@ class Command(BaseCommand):
         file_name = options['data'][0]
 
         with open(file_name, 'r') as json_data:
-            for product in json.load(json_data):
+            for product in json.loads(json_data):
                 product_detail = Product(product_name=str(product['product_name']),
                        product_price=str(product['product_price']),
                        product_image_url=str(product['product_image_url']),
