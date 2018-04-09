@@ -17,3 +17,4 @@ class NikeShoesItem(scrapy.Item):
     product_rating = Field()
     product_url = Field()
     product_subtitle = Field()
+    product_desc = Field()

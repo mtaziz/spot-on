@@ -1,5 +1,7 @@
 from django.db import models
 
+from jsonfield import JSONField
+
 
 class Product(models.Model):
 
@@ -10,3 +12,4 @@ class Product(models.Model):
     product_rating = models.CharField(max_length=255)
     product_url = models.CharField(max_length=255)
     product_subtitle = models.CharField(max_length=255)
+    product_desc = JSONField()

@@ -6,7 +6,7 @@ from scrapy_demo.items import NikeShoesItem
 
 
 class NikeShoesSpider(scrapy.Spider):
-    name = "nike_shoes"
+    name = "nike"
     domain = "https://store.nike.com/"
     men_site_url = "https://store.nike.com/html-services/gridwallData?country=US&lang_locale=en_US&gridwallPath=mens-shoes/7puZoi3&pn=%s"
     women_site_url = "https://store.nike.com/html-services/gridwallData?country=US&lang_locale=en_US&gridwallPath=womens-shoes/7ptZoi3&pn=%s"
@@ -35,6 +35,7 @@ class NikeShoesSpider(scrapy.Spider):
             element['product_rating'] = item.get('rating')
             element['product_url'] = item.get('pdpUrl')
             element['product_subtitle'] = item.get('subtitle')
+            element['product_desc'] = []
             yield element
 
         if outer_data['nextPageDataService']:
