@@ -5,7 +5,7 @@ import json
 
 
 class Command(BaseCommand):
-    help = 'Closes the specified poll for voting'
+    help = 'Import the data into the database'
 
     def add_arguments(self, parser):
         parser.add_argument('data', nargs=1)
