@@ -84,6 +84,9 @@ span.label-info span {
     transition: all 0.3s;
     padding: 25px 60px;
 }
+.search-button:hover {
+    background-color: #d75353;
+}
 
 /*
 *
