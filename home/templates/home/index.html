@@ -29,49 +29,12 @@
 
 
             <div class="search-box-container">
-                <input class="search-box" placeholder="What's on your mind?"/>
+                <form action="/result/" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="submit" value="Submit" />
+                </form>
             </div>
-
-            <div class="mdl-grid result-area">
-                {% for product in products %}
-                    <div class="mdl-cell mdl-cell--3-col">
-
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <img src="{{ product.product_image_url }}">
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <h2 class="product-name">{{ product.product_name }}</h2>
-                                <p>{{ product.product_subtitle }}</p>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a target="_blank" href="{{ product.product_url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    View product
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-
-            <div class="pagination">
-                <span class="step-links">
-                    {% if products.has_previous %}
-                        <a href="?page=1">&laquo; first</a>
-                        <a href="?page={{ products.previous_page_number }}">previous</a>
-                    {% endif %}
-
-                    <span class="current">
-                        Page {{ products.number }} of {{ products.paginator.num_pages }}.
-                    </span>
-
-                    {% if products.has_next %}
-                        <a href="?page={{ products.next_page_number }}">next</a>
-                        <a href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
-                    {% endif %}
-                </span>
-            </div>
-
 
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
@@ -83,7 +46,7 @@
                 </div>
             </footer>
 
-
+        </div>
     </main>
 </div>
 

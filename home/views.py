@@ -1,14 +1,35 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.http import HttpResponseRedirect
 
 from .models import Product
-
+from .forms import SearchForm
 
 def index(request):
-    products_list = Product.objects.all()
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
 
-    paginator = Paginator(products_list, 25)
+            return HttpResponseRedirect('/result/')
+    else:
+        form = SearchForm()
 
-    page = request.GET.get('page')
-    products = paginator.get_page(page)
-    return render(request, 'home/index.html', {'products': products})
+    # products_list = Product.objects.all()
+    #
+    # paginator = Paginator(products_list, 25)
+    #
+    # page = request.GET.get('page')
+    # products = paginator.get_page(page)
+    return render(request, 'home/index.html', {'form': form})
+
+def result(request):
+    keywords = ''
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            keywords = form.cleaned_data['keywords']
+
+    else:
+        form = SearchForm()
+
+    return render(request, 'home/result.html', {'form': form, 'keywords': keywords})
