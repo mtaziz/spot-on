@@ -33,13 +33,13 @@
                     <form id="search-box" action="/result/" method="post">
                         {% csrf_token %}
                         {{ form }}
-                        <input type="submit" value="Submit" />
+                        <input class="search-button" type="submit" value="Search with Spot On" />
                     </form>
                 </div>
             </div>
-            <h1> {{ keywords }}</h1>
 
             <div class="mdl-grid result-area">
+                <h1> {{ keywords }}</h1>
                 <!-- {% for product in products %}
                     <div class="mdl-cell mdl-cell--3-col">
 

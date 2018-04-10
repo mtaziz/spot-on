@@ -22,12 +22,17 @@
 *
 * Search box area
 */
+.search-box-container-wrapper {
+    position: relative;
+}
 .search-box-container {
     position: relative;
     max-width: 584px;
     margin: 0 auto;
     display: block;
-    height: 44px;
+}
+#search-box {
+    position: relative;
 }
 #search-box label {
     display: none;
@@ -35,7 +40,7 @@
 .bootstrap-tagsinput {
     width: 100%;
     display: flex !important;
-    overflow: auto;
+    overflow: hidden;
     min-height: 40px;
     outline: none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08) !important;
@@ -58,6 +63,26 @@ span.label-info {
 }
 span.label-info span {
 
+}
+.search-button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    background-color: #f06060;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    margin: 20 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 25px 60px;
 }
 
 /*
