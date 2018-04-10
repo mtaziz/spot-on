@@ -37,26 +37,35 @@
     display: block;
     height: 44px;
 }
-.search-box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin: 0;
-    font-size: 18px;
-    outline: none;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
-    border-width: 1px 0px 0px 0px;
-    border-color: rgba(0,0,0,0.16)
+#search-box label {
+    display: none;
 }
-.search-box:focus {
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+.bootstrap-tagsinput {
+    width: 100%;
+    display: flex !important;
+    overflow: auto;
+    min-height: 40px;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08) !important;
+    border-width: 1px 0px 0px 0px !important;
+    border-color: rgba(0,0,0,0.16) !important;
+    border-radius: 1px !important;
+}
+.bootstrap-tagsinput:hover {
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08) !important;
+}
+.bootstrap-tagsinput input {
+    padding: 10px;
+    font-size: 18px;
 }
 
-.label-info {
+span.label-info {
     background-color: #f1f8ff;
     color: #666 !important;
-    padding: 3px;
+    padding: 3px 0 3px 4px;
+}
+span.label-info span {
+
 }
 
 .step-links {
@@ -66,7 +75,14 @@
     position: relative;
     margin: 0 auto;
 }
-
+footer.mdl-mini-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
 
 @media only screen and (max-width: 1024px) {
     .mdl-layout__content {

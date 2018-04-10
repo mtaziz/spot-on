@@ -28,13 +28,14 @@
     <main class="mdl-layout__content">
         <div class="content-wrapper">
 
-
-            <div class="search-box-container">
-                <form id="search-box" action="/result/" method="post">
-                    {% csrf_token %}
-                    {{ form }}
-                    <input type="submit" value="Submit" />
-                </form>
+            <div class="search-box-container-wrapper">
+                <div class="search-box-container">
+                    <form id="search-box" action="/result/" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
             </div>
             <h1> {{ keywords }}</h1>
 
