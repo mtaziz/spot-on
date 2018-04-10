@@ -29,11 +29,14 @@
 
 
             <div class="search-box-container">
-                <input class="search-box" placeholder="What's on your mind?"/>
+                <form action="/result/" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                </form>
             </div>
 
             <div class="mdl-grid result-area">
-                {% for product in products %}
+                <!-- {% for product in products %}
                     <div class="mdl-cell mdl-cell--3-col">
 
                         <div class="demo-card-square mdl-card mdl-shadow--2dp">
@@ -51,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                {% endfor %}
+                {% endfor %} -->
             </div>
 
             <div class="pagination">
