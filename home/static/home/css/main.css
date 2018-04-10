@@ -1,28 +1,15 @@
+/*
+*
+* main components
+*/
 .content-wrapper {
     margin: 0 auto;
 }
 
-.result-area {
-    max-width: 1300px;
-}
-
-.mdl-cell {
-    color: #fff;
-}
-
-.demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
-}
-
-.demo-card-square > .mdl-card__title {
-    color: #fff;
-}
-
-.product-name {
-    font-size: 1.4em;
-}
-
+/*
+*
+* Nav bar
+*/
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
     color: #333;
@@ -30,6 +17,11 @@
 .material-icons {
     line-height: 42px !important;
 }
+
+/*
+*
+* Search box area
+*/
 .search-box-container {
     position: relative;
     max-width: 584px;
@@ -68,6 +60,31 @@ span.label-info span {
 
 }
 
+/*
+*
+* Result area
+*/
+.result-area {
+    max-width: 1300px;
+}
+
+.mdl-cell {
+    color: #fff;
+}
+
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+.demo-card-square > .mdl-card__title {
+    color: #fff;
+}
+
+.product-name {
+    font-size: 1.4em;
+}
+
 .step-links {
     display: block;
     text-align: center;
@@ -75,6 +92,11 @@ span.label-info span {
     position: relative;
     margin: 0 auto;
 }
+
+/*
+*
+* Footer
+*/
 footer.mdl-mini-footer {
     position: absolute;
     right: 0;
@@ -84,6 +106,10 @@ footer.mdl-mini-footer {
     text-align: center;
 }
 
+/*
+*
+* Media
+*/
 @media only screen and (max-width: 1024px) {
     .mdl-layout__content {
         padding-top: 64px;
