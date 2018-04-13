@@ -1,0 +1,15 @@
+language: python
+sudo: false
+branches:
+  only:
+    - master
+    - /^\d\.\d+$/
+    - /^\d\.\d+\.\d+(rc\d+|\.dev\d+)?$/
+matrix:
+  include:
+    - python: 3.6
+      env: TOXENV=py36
+install:
+    - pip install -U pip tox
+script:
+    - python manage.py runserver
