@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Product
 from .forms import SearchForm
 
+
 def index(request):
     if request.method == 'POST':
         form = SearchForm(request.POST)
@@ -22,6 +23,7 @@ def index(request):
     # products = paginator.get_page(page)
     return render(request, 'home/index.html', {'form': form})
 
+
 def result(request):
     keywords = ''
     if request.method == 'POST':
@@ -33,3 +35,18 @@ def result(request):
         form = SearchForm()
 
     return render(request, 'home/result.html', {'form': form, 'keywords': keywords})
+
+
+def intro(request):
+    keywords = ''
+    if request.method == 'POST':
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            keywords = form.cleaned_data['Keywords']
+
+    else:
+        form = SearchForm()
+
+    return render(request, 'home/intro.html', {'form': form, 'keywords': keywords})
+
+
