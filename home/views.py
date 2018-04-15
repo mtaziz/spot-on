@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponseRedirect
 
-from .models import Product
+
 from .forms import SearchForm
 
 
@@ -37,17 +37,7 @@ def result(request):
     return render(request, 'home/result.html', {'form': form, 'keywords': keywords})
 
 
-# @Lam this is the change I made.
 def intro(request):
-    keywords = ''
-    if request.method == 'POST':
-        form = SearchForm(request.POST)
-        if form.is_valid():
-            keywords = form.cleaned_data['Keywords']
-
-    else:
-        form = SearchForm()
-
-    return render(request, 'home/intro.html', {'form': form, 'keywords': keywords})
+    return render(request, 'home/intro.html')
 
 
