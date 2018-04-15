@@ -37,6 +37,7 @@ def result(request):
     return render(request, 'home/result.html', {'form': form, 'keywords': keywords})
 
 
+# @Lam this is the change I made.
 def intro(request):
     keywords = ''
     if request.method == 'POST':
