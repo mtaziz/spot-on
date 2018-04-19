@@ -73,7 +73,7 @@ span.label-info span {
     cursor: pointer;
     display: block;
     width: 50%;
-    margin: 20 auto;
+    margin: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -164,5 +164,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   padding: 20px 0;
   font-size: 30px;
 }
+
+img {
+    max-widt: 100%;
+    height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin center-v () {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 
 
