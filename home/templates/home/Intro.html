@@ -3,149 +3,183 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card w3-left-align w3-large" id="navDemo">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-           href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Browse</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Trendings</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Collections</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
-    </div>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-    </div>
-</div>
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">SPOT ON</h1>
-    <p class="w3-xlarge"> A safe and THE ONLY place to find collected signed sneakers for cheap 😇</p>
-    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-</header>
+{##}
+{#
+{#            <!-- First Grid -->#}
+{#            <div class="item" data-aos="zoom-in-up">#}
+{#                <div class="w3-row-padding w3-padding-64 w3-container">#}
+{#                    <div class="w3-content">#}
+{#                        <div class="w3-twothird ">#}
+{#                            <h1>Don't be like an Archaeologists 🕵🏾‍♂️</h1>#}
+{#                            <h5 class="w3-padding-32">Traditional sites and collectors of original Jordan sneakers are hard to find#}
+{#                                and#}
+{#                                after#}
+{#                                you find one, they ask for bank 💰. Spot-On have all collected sneakers for cheap and you don't have#}
+{#                                to#}
+{#                                hunt#}
+{#                                for us. </h5>#}
+{##}
+{#                            <p class="w3-text-grey"> Since, original signed sneakers are very hard to find, sites and people who#}
+{#                                hunt to#}
+{#                                get#}
+{#                                one either just keep a collection for themselves or sell it. But, they sell it for expensive.#}
+{#                                Spot-On#}
+{#                                have#}
+{#                                dedicated it time to do the hunting and the search for these shoes for you to get access to them#}
+{#                                easily#}
+{#                                and#}
+{#                                cheaper. Thanks us later 🤗!#}
+{#                            </p>#}
+{#                        </div>#}
+{##}
+{#                        <div class="w3-third w3-center">#}
+{#                            <i class="w3-padding-64 w3-text-red"></i>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{##}
+{#            <div style="background-color:green; display:inline-block; width:250px; height:0px; border:3px solid green;"></div>#}
+{#            <div style="background-color:red; display:inline-block; width:250px; height:0px; border:3px solid red;"></div>#}
+{#            <div style="background-color:black; display:inline-block; width:250px; height:1px; border:3px solid black;"></div>#}
+{#            <div style="background-color:pink; display:inline-block; width:250px; height:0px; border:3px solid pink;"></div>#}
+{#            <div style="background-color:yellow; display:inline-block; width:240px; height:0px; border:3px solid yellow;"></div>#}
+{##}
+{##}
+{#            <div class="grid-container">#}
+{##}
+{#                <div style="background-color: pink" data-aos="fade-right">#}
+{#                    <h1> Fit With Feelings </h1>#}
+{##}
+{#                    <img src="{% static 'home/images/Mj.jpg' %}" style="width: 500px; height: 500px"/>#}
+{##}
+{##}
+{#                    <p class="w3-text-grey " style="margin: 50px"> Search for sneakers based on your feelings#}
+{#                        and what you are going to use the sneakers for.#}
+{#                        Just type <i>"running shoes"</i> and leave the rest to us 🤗.#}
+{#                    </p>#}
+{#                </div>#}
+{##}
+{#                <div data-aos="fade-left">#}
+{#                    <h1> Stop Hunting </h1>#}
+{#                    <img src="/pictures/Mj.jpg" alt="pic" style="width:500px;height:500px;">#}
+{#                    <p class="w3-text-grey" style="margin: 50px"> Stop hunting to get actual signed sneakers. Explore throught our#}
+{#                        <i>"Browse"</i> tap for authentic#}
+{#                        signed sneakers. Leave the hunting to us and we will leave the clicking 💻 for you </p>#}
+{#                </div>#}
+{##}
+{#                <div data-aos="fade-left">#}
+{#                    <h1> Boomming and Trends</h1>#}
+{#                    <img src="/pictures/Mj.jpg" alt="booming" style="width: 500px; height: 500px;">#}
+{#                    <p> As you will expect, Indeed we show you all trending sneakers.#}
+{#                        Hoover our <i>Trending</i> tap to see all sneakers that are on fire 🔥 </p>#}
+{#                </div>#}
+{##}
+{#                <div style="background-color: lightblue" data-aos="fade-right">#}
+{#                    <h1> One Place </h1>#}
+{#                    <img src="/pictures/Mj.jpg" alt="collections" style="width: 500px; height: 500px;">#}
+{#                    <p class="w3-text-grey" style="margin: 50px">Just as you would have done, we collect all your browsing sneakers#}
+{#                        and put them in one place#}
+{#                        for them to look sparkles ✨ and easy to find them again when you visit the site </p>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <!-- Quote -->#}
+{#            <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">#}
+{#                <h1 class="w3-margin w3-xlarge">SPOT-ON</h1>#}
+{#                <i> Wear Original sneakers or walk bare feet - <b>John, Lan & Jon</b></i>#}
+{#            </div>#}
+{##}
+{##}
+{#            <!-- Footer -->#}
+{#            <footer class="w3-container w3-padding-64 w3-center w3-opacity">#}
+{#                <div class="w3-xlarge w3-padding-32">#}
+{#                    <i class="fa fa-facebook-official w3-hover-opacity"></i>#}
+{#                    <i class="fa fa-instagram w3-hover-opacity"></i>#}
+{#                    <i class="fa fa-snapchat w3-hover-opacity"></i>#}
+{#                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>#}
+{#                    <i class="fa fa-twitter w3-hover-opacity"></i>#}
+{#                    <i class="fa fa-linkedin w3-hover-opacity"></i>#}
+{#                </div>#}
+{#                <i>#}
+{#                    <p>Inspired: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>#}
+{#                </i>#}
+{#            </footer>#}
+{##}
+{##}
+{#        </div>#}
+{#    </main>#}
+{#</div>#}
 
-<div style="background-color:green; display:inline-block; width:250px; height:0px; border:3px solid green;"></div>
-<div style="background-color:red; display:inline-block; width:250px; height:0px; border:3px solid red;"></div>
-<div style="background-color:black; display:inline-block; width:250px; height:1px; border:3px solid black;"></div>
-<div style="background-color:pink; display:inline-block; width:250px; height:0px; border:3px solid pink;"></div>
-<div style="background-color:yellow; display:inline-block; width:240px; height:0px; border:3px solid yellow;"></div>
 
-<!-- First Grid -->
-<div class="item" data-aos="zoom-in-up">
-    <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="w3-content">
-            <div class="w3-twothird ">
-                <h1>Don't be like an Archaeologists 🕵🏾‍♂️</h1>
-                <h5 class="w3-padding-32">Traditional sites and collectors of original Jordan sneakers are hard to find
-                    and
-                    after
-                    you find one, they ask for bank 💰. Spot-On have all collected sneakers for cheap and you don't have
-                    to
-                    hunt
-                    for us. </h5>
 
-                <p class="w3-text-grey"> Since, original signed sneakers are very hard to find, sites and people who
-                    hunt to
-                    get
-                    one either just keep a collection for themselves or sell it. But, they sell it for expensive.
-                    Spot-On
-                    have
-                    dedicated it time to do the hunting and the search for these shoes for you to get access to them
-                    easily
-                    and
-                    cheaper. Thanks us later 🤗!
-                </p>
-            </div>
 
-            <div class="w3-third w3-center">
-                <i class="w3-padding-64 w3-text-red"></i>
-            </div>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Spot On</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href=""></a>
+            </nav>
         </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Spot On</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href=""></a>
+        </nav>
     </div>
+    <main class="mdl-layout__content">
+        <div class="content-wrapper">
+            <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+                <h1 class="w3-margin w3-jumbo">SPOT ON</h1>
+                <p class="w3-xlarge"> A safe and THE ONLY place to find collected signed sneakers for cheap 😇</p>
+                <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+            </header>
 
-</div>
-
-<div style="background-color:green; display:inline-block; width:250px; height:0px; border:3px solid green;"></div>
-<div style="background-color:red; display:inline-block; width:250px; height:0px; border:3px solid red;"></div>
-<div style="background-color:black; display:inline-block; width:250px; height:1px; border:3px solid black;"></div>
-<div style="background-color:pink; display:inline-block; width:250px; height:0px; border:3px solid pink;"></div>
-<div style="background-color:yellow; display:inline-block; width:240px; height:0px; border:3px solid yellow;"></div>
+            <div style="background-color:green; display:inline-block; width:250px; height:0px; border:3px solid green;"></div>
+            <div style="background-color:red; display:inline-block; width:250px; height:0px; border:3px solid red;"></div>
+            <div style="background-color:black; display:inline-block; width:250px; height:1px; border:3px solid black;"></div>
+            <div style="background-color:pink; display:inline-block; width:250px; height:0px; border:3px solid pink;"></div>
+            <div style="background-color:yellow; display:inline-block; width:240px; height:0px; border:3px solid yellow;"></div>
 
 
-<div class="grid-container">
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Spot On</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
 
-    <div  style="background-color: pink" data-aos="fade-right">
-        <h1> Fit With Feelings </h1>
-
-        <img src="../pictures/Mj.jpg" alt="Micheal Jordan" >
-
-        <p class="w3-text-grey " style="margin: 50px"> Search for sneakers based on your feelings
-            and what you are going to use the sneakers for.
-            Just type <i>"running shoes"</i> and leave the rest to us 🤗.
-        </p>
-    </div>
-
-    <div data-aos="fade-left">
-        <h1> Stop Hunting </h1>
-        <img src="/pictures/Mj.jpg" alt="pic" style="width:500px;height:500px;">
-        <p class="w3-text-grey" style="margin: 50px"> Stop hunting to get actual signed sneakers. Explore throught our
-            <i>"Browse"</i> tap for authentic
-            signed sneakers. Leave the hunting to us and we will leave the clicking 💻 for you </p>
-    </div>
-
-    <div data-aos="fade-left">
-        <h1> Boomming and Trends</h1>
-        <img src="/pictures/Mj.jpg" alt="booming" style="width: 500px; height: 500px;">
-        <p> As you will expect, Indeed we show you all trending sneakers.
-            Hoover our <i>Trending</i> tap to see all sneakers that are on fire 🔥 </p>
-    </div>
-
-    <div style="background-color: lightblue" data-aos="fade-right">
-        <h1> One Place </h1>
-        <img src="/pictures/Mj.jpg" alt="collections" style="width: 500px; height: 500px;">
-        <p class="w3-text-grey" style="margin: 50px">Just as you would have done, we collect all your browsing sneakers
-            and put them in one place
-            for them to look sparkles ✨ and easy to find them again when you visit the site </p>
-    </div>
+        </div>
+    </main>
 </div>
 
 
-<!-- Quote -->
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">SPOT-ON</h1>
-    <i> Wear Original sneakers or walk bare feet - <b>John, Lan & Jon</b></i>
-</div>
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <div class="w3-xlarge w3-padding-32">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <i>
-        <p>Inspired: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </i>
-</footer>
+
+
+
+
 
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
@@ -159,13 +193,9 @@
     }
 </script>
 
-<script>
-    AOS.init({
-        duration: 1200,
-    })
-</script>
 
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
