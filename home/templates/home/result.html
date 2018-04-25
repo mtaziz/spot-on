@@ -39,26 +39,30 @@
             </div>
 
             <div class="mdl-grid result-area">
-                <h1> {{ keywords }}</h1>
-                <!-- {% for product in products %}
-                    <div class="mdl-cell mdl-cell--3-col">
+                {% for product in products %}
+                    {% for word in keywords %}
+                        {% if keywords in product.product_desc.product_desc %}
 
-                        <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                            <div class="mdl-card__title mdl-card--expand">
-                                <img src="{{ product.product_image_url }}">
+                            <div class="mdl-cell mdl-cell--3-col">
+
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <img src="{{ product.product_image_url }}">
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <h2 class="product-name">{{ product.product_name }}</h2>
+                                        <p>{{ product.product_subtitle }}</p>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a target="_blank" href="{{ product.product_url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                            View product
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mdl-card__supporting-text">
-                                <h2 class="product-name">{{ product.product_name }}</h2>
-                                <p>{{ product.product_subtitle }}</p>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a target="_blank" href="{{ product.product_url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                    View product
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %} -->
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
             </div>
 
             <div class="pagination">
