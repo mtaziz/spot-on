@@ -32,4 +32,6 @@ def result(request):
     else:
         form = SearchForm()
 
-    return render(request, 'home/result.html', {'form': form, 'keywords': keywords})
+    products = Product.objects.all()
+
+    return render(request, 'home/result.html', {'form': form, 'keywords': keywords, 'products': products})
