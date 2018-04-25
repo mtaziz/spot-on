@@ -14,13 +14,13 @@ def index(request):
     else:
         form = SearchForm()
 
-    # products_list = Product.objects.all()
-    #
-    # paginator = Paginator(products_list, 25)
-    #
-    # page = request.GET.get('page')
-    # products = paginator.get_page(page)
-    return render(request, 'home/index.html', {'form': form})
+    products_list = Product.objects.all()
+
+    paginator = Paginator(products_list, 25)
+
+    page = request.GET.get('page')
+    products = paginator.get_page(page)
+    return render(request, 'home/index.html', {'form': form, 'products': products})
 
 def result(request):
     keywords = ''
