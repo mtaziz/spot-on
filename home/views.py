@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponseRedirect
 
-
+from .models import Product
 from .forms import SearchForm
 
 
@@ -37,3 +37,7 @@ def result(request):
     products = Product.objects.all()
 
     return render(request, 'home/result.html', {'form': form, 'keywords': keywords, 'products': products})
+
+
+def intro(request):
+    return render(request, 'home/Intro.html')
