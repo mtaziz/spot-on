@@ -40,4 +40,4 @@ def result(request):
 
 
 def intro(request):
-    return render(request, 'home/Intro.html')
+    return render(request, 'home/intro.html')
