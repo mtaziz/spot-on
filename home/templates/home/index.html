@@ -26,17 +26,7 @@
         <div class="content-wrapper">
 
 
-            <div class="search-box-container">
-                <form action="/result/" method="post">
-                    {% csrf_token %}
-                    {{ form }}
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-
-            <div class="mdl-grid result-area">
-
-            </div>
+            {% include "home/includes/searchform.html" %}
 
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">

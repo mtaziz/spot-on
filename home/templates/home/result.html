@@ -25,15 +25,7 @@
     <main class="mdl-layout__content">
         <div class="content-wrapper">
 
-            <div class="search-box-container-wrapper">
-                <div class="search-box-container">
-                    <form id="search-box" action="/result/" method="post">
-                        {% csrf_token %}
-                        {{ form }}
-                        <input class="search-button" type="submit" value="Search with Spot On" />
-                    </form>
-                </div>
-            </div>
+            {% include "home/includes/searchform.html" %}
 
             <div class="mdl-grid result-area">
                 {% for product in products %}

@@ -1,0 +1,9 @@
+<div class="search-box-container-wrapper">
+    <div class="search-box-container">
+        <form id="search-box" action="/result/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input class="search-button" type="submit" value="Search with Spot On" />
+        </form>
+    </div>
+</div>
