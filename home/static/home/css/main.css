@@ -2,6 +2,9 @@
 *
 * main components
 */
+body {
+    opacity: 0;
+}
 .content-wrapper {
     margin: 0 auto;
 }
@@ -14,8 +17,17 @@
 .demo-layout-transparent .mdl-layout__drawer-button {
     color: #333;
 }
+
+
 .material-icons {
     line-height: 42px !important;
+    color: black;
+}
+
+.mdl-layout__header--transparent.mdl-layout__header--transparent {
+    background-color: grey;
+    color: white;
+    box-shadow: none;
 }
 
 /*
@@ -73,7 +85,7 @@ span.label-info span {
     cursor: pointer;
     display: block;
     width: 50%;
-    margin: 20 auto;
+    margin: 50px auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -95,22 +107,30 @@ span.label-info span {
 .result-area {
     max-width: 1300px;
 }
-
-.mdl-cell {
-    color: #fff;
+.grid-25 {
+    padding: 15px !important;
 }
-
 .demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    height: 100%;
 }
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
 }
+.mdl-card__supporting-text {
+    width: 100% !important;
+    padding: 25px !important;
+}
+
+.mdl-card__supporting-text hr {
+    border-bottom: 2px solid;
+}
 
 .product-name {
     font-size: 1.4em;
+    line-height: 1.5em;
+    font-weight: 700;
 }
 
 .step-links {
@@ -121,10 +141,25 @@ span.label-info span {
     margin: 0 auto;
 }
 
+.mdl-button {
+    color: #f06060 !important;
+}
+
+
 /*
 *
 * Footer
 */
+.mdl-mini-footer {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.intro-footer {
+    position: relative;
+}
 
 /*
 *
@@ -134,4 +169,39 @@ span.label-info span {
     .mdl-layout__content {
         padding-top: 64px;
     }
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  background-color: white;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(192,192,192,0.3);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+img {
+    max-widt: 100%;
+    height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin center-v () {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }

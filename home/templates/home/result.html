@@ -1,56 +1,29 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap-tagsinput.css' %}" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+{% include "home/includes/head.html" %}
 
 
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">Spot On</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation -->
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href=""></a>
-            </nav>
-        </div>
-    </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Spot On</span>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href=""></a>
-        </nav>
-    </div>
+
+    {% include "home/includes/navbar.html" %}
+
     <main class="mdl-layout__content">
         <div class="content-wrapper">
 
-            <div class="search-box-container-wrapper">
-                <div class="search-box-container">
-                    <form id="search-box" action="/result/" method="post">
-                        {% csrf_token %}
-                        {{ form }}
-                        <input class="search-button" type="submit" value="Search with Spot On" />
-                    </form>
-                </div>
-            </div>
+            {% include "home/includes/searchform.html" %}
 
             <div class="mdl-grid result-area">
                 {% for product in products %}
                     {% for word in keywords %}
                         {% if keywords in product.product_desc.product_desc %}
-
-                            <div class="mdl-cell mdl-cell--3-col">
-
+                            <div class="grid-25 tablet-grid-50 mobile-grid-100">
                                 <div class="demo-card-square mdl-card mdl-shadow--2dp">
                                     <div class="mdl-card__title mdl-card--expand">
                                         <img src="{{ product.product_image_url }}">
                                     </div>
                                     <div class="mdl-card__supporting-text">
                                         <h2 class="product-name">{{ product.product_name }}</h2>
+                                        <hr />
                                         <p>{{ product.product_subtitle }}</p>
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
@@ -83,24 +56,10 @@
                 </span>
             </div>
 
-
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Spot On</div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
+            {% include "home/includes/footer.html" %}
 
         </div>
     </main>
 </div>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-<script src="{% static 'home/js/bootstrap-tagsinput.js' %}"></script>
-<script src="{% static 'home/js/main.js' %}"></script>
+{% include "home/includes/scripts.html" %}
