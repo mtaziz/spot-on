@@ -107,14 +107,12 @@ span.label-info span {
 .result-area {
     max-width: 1300px;
 }
-
-.mdl-cell {
-    color: black;
+.grid-25 {
+    padding: 15px !important;
 }
-
 .demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    height: 100%;
 }
 
 .demo-card-square > .mdl-card__title {
