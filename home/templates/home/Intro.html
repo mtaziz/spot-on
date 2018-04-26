@@ -10,10 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
-
-{##}
-{#
 {#            <!-- First Grid -->#}
 {#            <div class="item" data-aos="zoom-in-up">#}
 {#                <div class="w3-row-padding w3-padding-64 w3-container">#}
@@ -121,10 +117,6 @@
 {#    </main>#}
 {#</div>#}
 
-
-
-
-
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
     <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
@@ -146,17 +138,61 @@
     </div>
     <main class="mdl-layout__content">
         <div class="content-wrapper">
-            <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-                <h1 class="w3-margin w3-jumbo">SPOT ON</h1>
-                <p class="w3-xlarge"> A safe and THE ONLY place to find collected signed sneakers for cheap 😇</p>
-                <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-            </header>
 
-            <div style="background-color:green; display:inline-block; width:250px; height:0px; border:3px solid green;"></div>
-            <div style="background-color:red; display:inline-block; width:250px; height:0px; border:3px solid red;"></div>
-            <div style="background-color:black; display:inline-block; width:250px; height:1px; border:3px solid black;"></div>
-            <div style="background-color:pink; display:inline-block; width:250px; height:0px; border:3px solid pink;"></div>
-            <div style="background-color:yellow; display:inline-block; width:240px; height:0px; border:3px solid yellow;"></div>
+            <div class="search-box-container-wrapper">
+                <div class="search-box-container">
+                    <form id="search-box" action="/result/" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input class="search-button" type="submit" value="Search with Spot On" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="mdl-grid result-area">
+                {% for product in products %}
+                    {% for word in keywords %}
+                        {% if keywords in product.product_desc.product_desc %}
+
+                            <div class="mdl-cell mdl-cell--3-col">
+
+                                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand">
+                                        <img src="{{ product.product_image_url }}">
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <h2 class="product-name">{{ product.product_name }}</h2>
+                                        <p>{{ product.product_subtitle }}</p>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a target="_blank" href="{{ product.product_url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                            View product
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+
+            <div class="pagination">
+                <span class="step-links">
+                    {% if products.has_previous %}
+                        <a href="?page=1">&laquo; first</a>
+                        <a href="?page={{ products.previous_page_number }}">previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ products.number }} of {{ products.paginator.num_pages }}.
+                    </span>
+
+                    {% if products.has_next %}
+                        <a href="?page={{ products.next_page_number }}">next</a>
+                        <a href="?page={{ products.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
 
 
             <footer class="mdl-mini-footer">
@@ -172,14 +208,6 @@
         </div>
     </main>
 </div>
-
-
-
-
-
-
-
-
 
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
