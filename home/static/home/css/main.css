@@ -135,6 +135,12 @@ span.label-info span {
 *
 * Footer
 */
+.mdl-mini-footer {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 
 /*
 *
