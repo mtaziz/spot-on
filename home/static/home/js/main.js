@@ -4,7 +4,7 @@ jQuery(function($) {
     }
 
     function footerReposition() {
-        if ($('.mdl-grid.result-area:empty')) {
+        if ($('.mdl-grid.result-area').length && $('.mdl-grid.result-area:empty')) {
             $('.mdl-mini-footer').css({
                 'position': 'relative'
             });
