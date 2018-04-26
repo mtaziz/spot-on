@@ -7,138 +7,136 @@
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-right-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Spot-On</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Project</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Feedback</a>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>
+    <div class="w3-bar w3-theme-d2 w3-right-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Spot-On</a>
+        <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Project</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Feedback</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+</div>
 
- <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
     <a href="#team" class="w3-bar-item w3-button">Team</a>
     <a href="#work" class="w3-bar-item w3-button">project</a>
 
     <a href="#contact" class="w3-bar-item w3-button">Feedback</a>
-  </div>
 </div>
 
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity w3-animate-opacity">
-  <img src="{% static 'home/images/Mj.jpg' %}" style="width:100%;min-height:350px;max-height:600px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-    <a href="/"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Begin to use our project">Start exploring</button></a>
-  </div>
+    <img src="{% static 'home/images/Mj.jpg' %}" style="width:100%;min-height:350px;max-height:600px;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+        <a href="/"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Begin to use our project">Start exploring</button></a>
+    </div>
 </div>
 
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>MEET THE TEAM</h2>
+    <h2>MEET THE TEAM</h2>
 
-<div class="w3-row"><br>
+    <div class="w3-row"><br>
 
-<div class="w3-quarter">
-  <img src="{% static 'home/images/john.jpg' %}"r alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>John Asare</h3>
-  <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
-</div>
+        <div class="w3-quarter">
+            <img src="{% static 'home/images/john.jpg' %}"r alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>John Asare</h3>
+            <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
+        </div>
 
-    <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Jon Dias </h3>
-  <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
-</div>
+        <div class="w3-quarter">
+            <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Jon Dias </h3>
+            <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
+        </div>
 
-    <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Lam Nguyen</h3>
-  <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
-</div>
-</div>
+        <div class="w3-quarter">
+            <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Lam Nguyen</h3>
+            <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
+        </div>
+    </div>
 </div>
 
 <!-- Work Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-<div class="w3-quarter w3-animate-left">
-<h2>Our Work</h2>
-<p>Spot-On, a powerful and curated group who mission is to make it easier for you to find original sneakers. Orginal sneakers is dominating the market and there are high profit of it: <a href="https://www.marketwatch.com/investing/stock/nke" target="_blank"> check the stock.</a> People who buy these aunthentic sneakers travels to other states to hunt them. Our mission to bring it to them on their finger-nails</p>
-</div>
+    <div class="w3-quarter w3-animate-left">
+        <h2>Our Work</h2>
+        <p>Spot-On, a powerful and curated group who mission is to make it easier for you to find original sneakers. Orginal sneakers is dominating the market and there are high profit of it: <a href="https://www.marketwatch.com/investing/stock/nke" target="_blank"> check the stock.</a> People who buy these aunthentic sneakers travels to other states to hunt them. Our mission to bring it to them on their finger-nails</p>
+    </div>
 
-<div class="w3-quarter ">
-<div class="w3-card w3-white">
-  <img src="/w3images/fjords.jpg" alt="Vernazza" style="width:100%">
-  <div class="w3-container">
-  <h3>Search </h3>
-  <p> <i> Our search box is the core heart of our design. It has been design to take user's description of a shoes and to crawl the database to return the expected sneakers that the user is looking for. Literrally, this will save users a ton of time </i></p>
-  </div>
-  </div>
-</div>
+    <div class="w3-quarter ">
+        <div class="w3-card w3-white">
+            <img src="/w3images/fjords.jpg" alt="Vernazza" style="width:100%">
+            <div class="w3-container">
+                <h3>Search </h3>
+                <p> <i> Our search box is the core heart of our design. It has been design to take user's description of a shoes and to crawl the database to return the expected sneakers that the user is looking for. Literrally, this will save users a ton of time </i></p>
+            </div>
+        </div>
+    </div>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/lights.jpg" alt="Cinque Terre" style="width:100%">
-  <div class="w3-container">
-  <h3>Database</h3>
-  <p> <i> Our database is a combination of nike.com API and our own database of research description of popular sneakers. We have implemented it to march with user input. But it will add any unkown input if it encouters one. This help user's search </i> </p>
-  </div>
-  </div>
-</div>
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/w3images/lights.jpg" alt="Cinque Terre" style="width:100%">
+            <div class="w3-container">
+                <h3>Database</h3>
+                <p> <i> Our database is a combination of nike.com API and our own database of research description of popular sneakers. We have implemented it to march with user input. But it will add any unkown input if it encouters one. This help user's search </i> </p>
+            </div>
+        </div>
+    </div>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/mountains.jpg" alt="Monterosso" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
+    <div class="w3-quarter">
+        <div class="w3-card w3-white">
+            <img src="/w3images/mountains.jpg" alt="Monterosso" style="width:100%">
+            <div class="w3-container">
+                <h3>Customer 3</h3>
+                <h4>Trade</h4>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+            </div>
+        </div>
+    </div>
 
 </div>
 
 <!-- Container -->
 <div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
 </div>
 
 
 <!-- Contact Container -->
 <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Give Us Feedback! ---> </span></div>
+    <div class="w3-row">
+        <div class="w3-col m5">
+            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Give Us Feedback! ---> </span></div>
 
+        </div>
+        <div class="w3-col m7">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input" type="text" name="Email" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input" type="text" name="Message" required>
+                </div>
+                <input class="w3-check" type="checkbox" checked name="Like">
+                <label>I Like it!</label>
+                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+            </form>
+        </div>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
-  </div>
 </div>
 
 
@@ -169,20 +167,15 @@ function openNav() {
 
 
 
-            <footer class="mdl-mini-footer intro-footer" style="background-color: #d75353; color: white;" >
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Spot On</div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
-
-
-        </div>
-    </main>
-</div>
+<footer class="mdl-mini-footer intro-footer" style="background-color: #d75353; color: white;" >
+    <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Spot On</div>
+        <ul class="mdl-mini-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+    </div>
+</footer>
 
 
 {% include "home/includes/scripts.html" %}
