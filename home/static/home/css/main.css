@@ -157,6 +157,10 @@ span.label-info span {
     right: 0;
 }
 
+.intro-footer {
+    position: relative;
+}
+
 /*
 *
 * Media
