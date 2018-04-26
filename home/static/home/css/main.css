@@ -141,6 +141,10 @@ span.label-info span {
     margin: 0 auto;
 }
 
+.mdl-button {
+    color: #f06060 !important;
+}
+
 
 /*
 *
