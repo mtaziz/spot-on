@@ -11,8 +11,15 @@ jQuery(function($) {
         }
     }
 
+    function loadPage() {
+        $('body').css({
+            'opacity': '1'
+        });
+    }
+
     $(document).ready(function() {
         AOSinit();
         footerReposition();
+        loadPage();
     });
 });
