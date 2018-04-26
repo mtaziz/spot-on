@@ -29,7 +29,7 @@ def result(request):
     if request.method == 'POST':
         form = SearchForm(request.POST)
         if form.is_valid():
-            keywords = form.cleaned_data['keywords']
+            keywords = [element.strip() for element in form.cleaned_data['keywords'].split(',')]
 
     else:
         form = SearchForm()
