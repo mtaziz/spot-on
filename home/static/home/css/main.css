@@ -22,9 +22,9 @@
 }
 
 .mdl-layout__header--transparent.mdl-layout__header--transparent {
-background-color: grey;
+    background-color: grey;
     color: white;
-box-shadow: none;
+    box-shadow: none;
 }
 
 /*
@@ -135,16 +135,6 @@ span.label-info span {
 *
 * Footer
 */
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 10%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
 
 /*
 *
