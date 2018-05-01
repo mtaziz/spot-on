@@ -1,9 +1,27 @@
+{#<div class="search-box-container-wrapper">#}
+{#    <div class="search-box-container">#}
+{#        <form id="search-box" action="/result/" method="post">#}
+{#            {% csrf_token %}#}
+{#            {{ form }}#}
+{#            <input class="search-button" type="submit" value="Search with Spot On" />#}
+{#        </form>#}
+{#    </div>#}
+{#</div>#}
+
 <div class="search-box-container-wrapper">
-    <div class="search-box-container">
-        <form id="search-box" action="/result/" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input class="search-button" type="submit" value="Search with Spot On" />
-        </form>
-    </div>
+<div class="search-box-container">
+    <input id="myInput" value="Some text..">
+<button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+    }
+});
+</script>
+</div>
+
 </div>
