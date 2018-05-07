@@ -1,34 +1,33 @@
 
 
+{#<div class="search-box-container-wrapper">#}
+{#    <div class="search-box-container">#}
+{#        <form id="search-box" action="/result/" method="post">#}
+{#            {% csrf_token %}#}
+{#            {{ form }}#}
+{#            <input class="search-button" type="submit" value="Search with Spot On" />#}
+{#        </form>#}
+{#    </div>#}
+{#</div>#}
+
+
 <div class="search-box-container-wrapper">
     <div class="search-box-container">
         <form id="search-box" action="/result/" method="post">
             {% csrf_token %}
             {{ form }}
-            <input class="search-button" type="submit" value="Search with Spot On" />
+            <button class="search-button" type="submit" value="Search"> </button>
         </form>
     </div>
 </div>
 
+<script>
+var input = document.getElementById("search-box");
+input.addEventListener("keypress", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("search-box").click();
+    }
+});
+</script>
 
-
-{#<div class="search-box-container-wrapper">#}
-{#    <div class="search-box-container">#}
-{#<form id="search-box" action="/result/" method="post">#}
-{#    {% csrf_token %}#}
-{#    {{ form }}#}
-{#</form>#}
-{#<button class="search-box-container" id="myBtn" onclick="javascript:alert({% include "home/result.html" %})">Button</button>#}
-{##}
-{#<script>#}
-{#var input = document.getElementById("myInput");#}
-{#input.addEventListener("keyup", function(event) {#}
-{#    event.preventDefault();#}
-{#    if (event.keyCode === 13) {#}
-{#        document.getElementById("myBtn").click();#}
-{#    }#}
-
-{#</script>#}
-{#</div>#}
-{#    </div>#}
-{##}
