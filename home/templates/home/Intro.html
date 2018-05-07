@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 <script src="bower_components/aos/dist/aos.js"></script>
 
-<body id="myPage">
+<body id="myPage" style="height: 100%">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -38,6 +38,8 @@
 </div>
 
 {% include "home/includes/extras/design_line.html" %}
+
+<div class="parallax"></div>
 
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team" >
@@ -138,7 +140,8 @@
                 </div>
                 <input class="w3-check" type="checkbox" checked name="Like">
                 <label>I Like it!</label>
-                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                <button id="myBtn" onclick="javascript:alert('Thank you!')">Button</button>
+                {% include "home/includes/scripts.html" %}
             </form>
         </div>
     </div>
@@ -168,11 +171,7 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-</script>
 
-<script>
-  AOS.init();
-</script>
 
 {% include "home/includes/footer.html" %}
 {% include "home/includes/scripts.html" %}

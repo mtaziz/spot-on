@@ -209,3 +209,12 @@ img {
   margin: auto;
 }
 
+.parallax {
+    /* Create the background image and its settings for the scrolling style */
+    background: fixed no-repeat center url(" /home/static/home/images/john.jpg");
+
+    background-size: cover;
+
+    /* Full height */
+    height: 100%;
+}
