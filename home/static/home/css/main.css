@@ -1,3 +1,5 @@
+{% load static %}
+
 /*
 *
 * main components
@@ -206,3 +208,4 @@ img {
   bottom: 0;
   margin: auto;
 }
+
