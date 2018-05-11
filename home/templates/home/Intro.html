@@ -3,7 +3,10 @@
 {% include "home/includes/head.html" %}
 {% include "home/includes/extras/intro.html" %}
 
-<body id="myPage">
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+<script src="bower_components/aos/dist/aos.js"></script>
+
+<body id="myPage" style="height: 100%">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -27,33 +30,37 @@
 
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity w3-animate-opacity">
-    <img src="{% static 'home/images/Mj.jpg' %}" style="width:100%;min-height:350px;max-height:600px;">
+<div class="w3-animate-zoom w3-display-container w3-animate-opacity w3-animate-opacity" style="animation-duration: 2s">
+    <img src="{% static 'home/images/sneakers.png' %}" style="width:100%;min-height:350px;max-height:600px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
         <a href="/"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Begin to use our project">Start exploring</button></a>
     </div>
 </div>
 
+{% include "home/includes/extras/design_line.html" %}
+
+<div class="parallax"></div>
+
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
+<div class="w3-container w3-padding-64 w3-center" id="team" >
     <h2>MEET THE TEAM</h2>
 
     <div class="w3-row"><br>
 
         <div class="w3-quarter">
-            <img src="{% static 'home/images/john.jpg' %}"r alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <img src={% static '/home/images/john.jpg' %} alt="JohnAsare" style="width:45%" class="w3-circle w3-hover-opacity">
             <h3>John Asare</h3>
             <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
         </div>
 
         <div class="w3-quarter">
-            <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-            <h3>Jon Dias </h3>
+            <img src={% static 'home/images/Jon.jpg' %} alt="Diaz" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Jon Diaz </h3>
             <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
         </div>
 
         <div class="w3-quarter">
-            <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <img src={% static 'home/images/Nga.jpg' %} alt="Lam" style="width:45%" class="w3-circle w3-hover-opacity">
             <h3>Lam Nguyen</h3>
             <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
         </div>
@@ -110,7 +117,7 @@
 </div>
 
 
-<!-- Contact Container -->
+<!-- feedback container -->
 <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
     <div class="w3-row">
         <div class="w3-col m5">
@@ -133,7 +140,9 @@
                 </div>
                 <input class="w3-check" type="checkbox" checked name="Like">
                 <label>I Like it!</label>
-                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                <button id="myBtn" class="w3-button w3-right w3-theme" onclick="javascript:alert('Thank you!')">Send
+                </button>
+                {% include "home/includes/scripts.html" %}
             </form>
         </div>
     </div>
@@ -163,19 +172,9 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-</script>
 
 
-
-<footer class="mdl-mini-footer intro-footer" style="background-color: #d75353; color: white;" >
-    <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">Spot On</div>
-        <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy & Terms</a></li>
-        </ul>
-    </div>
-</footer>
-
-
+{% include "home/includes/footer.html" %}
 {% include "home/includes/scripts.html" %}
+
+

@@ -1,3 +1,5 @@
+{% load static %}
+
 /*
 *
 * main components
@@ -81,7 +83,7 @@ span.label-info span {
     font-family: inherit;
     font-size: inherit;
     color: #fff;
-    background-color: #f06060;
+    background-color: #000000;
     cursor: pointer;
     display: block;
     width: 50%;
@@ -95,9 +97,10 @@ span.label-info span {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     padding: 25px 60px;
+
 }
 .search-button:hover {
-    background-color: #d75353;
+    background-color: #DAA520;
 }
 
 /*
@@ -204,4 +207,14 @@ img {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.parallax {
+    /* Create the background image and its settings for the scrolling style */
+    background: fixed no-repeat center url(" /home/static/home/images/john.jpg");
+
+    background-size: cover;
+
+    /* Full height */
+    height: 100%;
 }
