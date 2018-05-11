@@ -1,5 +1,3 @@
-{% load static %}
-
 /*
 *
 * main components
@@ -158,6 +156,8 @@ span.label-info span {
     position: absolute;
     left: 0;
     right: 0;
+    background-color: #d75353 !important;
+    color: white !important;
 }
 
 /*
@@ -206,11 +206,7 @@ img {
 }
 
 .parallax {
-    /* Create the background image and its settings for the scrolling style */
     background: fixed no-repeat center url(" /home/static/home/images/john.jpg");
-
     background-size: cover;
-
-    /* Full height */
     height: 100%;
 }
