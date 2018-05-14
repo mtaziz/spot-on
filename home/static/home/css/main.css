@@ -162,6 +162,9 @@ span.label-info span {
     right: 0;
     color: white !important;
 }
+.intro-footer .mdl-mini-footer {
+    position: relative;
+}
 
 /*
 *
@@ -201,8 +204,10 @@ img {
     height: auto;
 }
 
-.home-background {
-    width: 100%;
+.first-section {
+    background-image: url('/static/home/images/sneakers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -218,7 +223,7 @@ img {
 }
 
 .parallax {
-    background: fixed no-repeat center url(" /home/static/home/images/john.jpg");
+    background: fixed no-repeat center url("/home/static/home/images/john.jpg");
     background-size: cover;
     height: 100%;
 }
