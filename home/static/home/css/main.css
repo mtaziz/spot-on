@@ -33,12 +33,17 @@
 */
 .search-box-container-wrapper {
     position: relative;
+    padding: 50px;
 }
 .search-box-container {
     position: relative;
     max-width: 584px;
     margin: 0 auto;
     display: block;
+}
+.spoton-logo {
+    max-height: 150px;
+    width: 100%;
 }
 #search-box {
     position: relative;

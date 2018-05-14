@@ -1,5 +1,8 @@
+{% load static %}
+
 <div class="search-box-container-wrapper">
     <div class="search-box-container">
+        <img class="spoton-logo" src="{% static 'home/images/icon.png' %}" />
         <form id="search-box" action="/result/" method="post">
             {% csrf_token %}
             {{ form }}
