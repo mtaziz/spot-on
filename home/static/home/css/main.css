@@ -2,9 +2,6 @@
 *
 * main components
 */
-body {
-    opacity: 0;
-}
 .content-wrapper {
     margin: 0 auto;
 }
@@ -66,6 +63,7 @@ body {
 .bootstrap-tagsinput input {
     padding: 10px;
     font-size: 18px;
+    width: 100% !important;
 }
 
 span.label-info {
