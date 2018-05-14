@@ -121,6 +121,7 @@ span.label-info span {
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
+    height: 100%;
 }
 .mdl-card__supporting-text {
     width: 100% !important;
