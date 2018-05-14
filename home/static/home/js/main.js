@@ -25,9 +25,14 @@ jQuery(function($) {
         }
     });
 
+    function scrollPage() {
+        $('#fullpage').fullpage();
+    }
+
     $(document).ready(function() {
         AOSinit();
         footerReposition();
         loadPage();
+        scrollPage();
     });
 });
