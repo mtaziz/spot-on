@@ -79,7 +79,7 @@ span.label-info span {
     font-family: inherit;
     font-size: inherit;
     color: #fff;
-    background-color: #000000;
+    background-color: #932F6D;
     cursor: pointer;
     display: block;
     width: 50%;
@@ -96,7 +96,7 @@ span.label-info span {
 
 }
 .search-button:hover {
-    background-color: #DAA520;
+    opacity: 0.9;
 }
 
 /*
@@ -154,7 +154,6 @@ span.label-info span {
     position: absolute;
     left: 0;
     right: 0;
-    background-color: #d75353 !important;
     color: white !important;
 }
 
