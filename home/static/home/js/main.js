@@ -19,7 +19,27 @@ jQuery(function($) {
 
     function scrollPage() {
         $('#fullpage').fullpage({
-            
+            //Navigation
+
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            fitToSection: true,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+
+
+            lazyLoading: true,
+
         });
     }
 

@@ -164,6 +164,7 @@ span.label-info span {
 }
 .intro-footer .mdl-mini-footer {
     position: relative;
+    height: 100%;
 }
 
 /*
@@ -176,54 +177,55 @@ span.label-info span {
     }
 }
 
-body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif
-}
-.w3-bar,h1,button {
-    font-family: "Montserrat", sans-serif
-}
-.fa-anchor,.fa-coffee {
-    font-size:200px
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5px;
-    background-color: white;
-    padding: 10px;
-}
-.grid-container > div {
-    background-color: rgba(192,192,192,0.3);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
 
 .first-section {
-    background-image: url('/static/home/images/sneakers.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #963D5A;
+}
+.second-section {
+    background-color: #9D69A3;
+    color: #fff;
 }
 
-
-* {
-    box-sizing: border-box;
+.intro-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 110px;
 }
-
-@mixin center-v () {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.intro-desc {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 50px;
 }
-
-.parallax {
-    background: fixed no-repeat center url("/home/static/home/images/john.jpg");
-    background-size: cover;
-    height: 100%;
+.intro-buttons {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.start-exploring {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    background: #3E4C5E;
+    display: inline-block;
+    color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.start-exploring:last-child {
+    background-color: #F2C14E;
+    color: #333;
+    margin-left: 15px;
+}
+.start-exploring:hover {
+    opacity: 0.95;
 }

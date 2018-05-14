@@ -3,35 +3,38 @@
 {% include "home/includes/head.html" %}
 {% include "home/includes/extras/intro.html" %}
 
-<body id="myPage">
-
 <div id="fullpage">
     <!-- Image Header -->
     <div class="first-section section">
-        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-            <a href="/"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Begin to use our project">Start exploring</button></a>
+        <h1 class="intro-heading">Spot On</h1>
+        <p class="intro-desc">
+            Easily find the shoes you've always wanted!
+        </p>
+        <div class="intro-buttons">
+            <a href="/" class="start-exploring">Start exploring</a>
+            <a href="/" class="start-exploring">Take a look at our team!</a>
         </div>
     </div>
 
     <!-- Team Container -->
-    <div class="section w3-container w3-padding-64 w3-center" id="team" >
+    <div class="second-section section" id="team" >
         <h2>MEET THE TEAM</h2>
 
-        <div class="w3-row"><br>
+        <div>
 
-            <div class="w3-quarter">
+            <div class="grid-33">
                 <img src={% static '/home/images/john.jpg' %} alt="JohnAsare" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>John Asare</h3>
                 <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
             </div>
 
-            <div class="w3-quarter">
+            <div class="grid-33">
                 <img src={% static 'home/images/Jon.jpg' %} alt="Diaz" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>Jon Diaz </h3>
                 <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
             </div>
 
-            <div class="w3-quarter">
+            <div class="grid-33">
                 <img src={% static 'home/images/Nga.jpg' %} alt="Lam" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>Lam Nguyen</h3>
                 <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
@@ -108,7 +111,6 @@
                     <label>I Like it!</label>
                     <button id="myBtn" class="w3-button w3-right w3-theme" onclick="javascript:alert('Thank you!')">Send
                     </button>
-                    {% include "home/includes/scripts.html" %}
                 </form>
             </div>
         </div>
@@ -118,4 +120,5 @@
         {% include "home/includes/footer.html" %}
     </div>
 </div>
+
 {% include "home/includes/scripts.html" %}
