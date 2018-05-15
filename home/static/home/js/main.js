@@ -20,6 +20,11 @@ jQuery(function($) {
     function scrollPage() {
         $('#fullpage').fullpage({
             //Navigation
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+			navigation: true,
+            sectionsColor: ['#963D5A', '#40798C', '#104F55', '#4D243D'],
+			navigationPosition: 'right',
+			navigationTooltips: ['Spot On', 'Our work', 'Our team', 'Leave us feedback!'],
 
 
             //Scrolling
