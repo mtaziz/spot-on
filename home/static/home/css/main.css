@@ -219,9 +219,8 @@ span.label-info span {
     right: 0;
     color: white !important;
 }
-.intro-footer .mdl-mini-footer {
+.non-fixed-footer .mdl-mini-footer {
     position: relative;
-    height: 100%;
 }
 
 /*
@@ -286,7 +285,7 @@ span.label-info span {
     max-width: 350px !important;
     background-image: url('/static/home/images/stars-background.png');
     background-size: 150%;
-    border-radius: 15px !important;
+    border-radius: 5px !important;
 }
 .demo-card-wide .mdl-card__title {
     height: 200px;
@@ -428,6 +427,41 @@ Log in
     color: #333 !important;
     background-color: #FFCF56 !important;
     margin-left: 20px;
+}
+
+/*
+*
+*
+Sign up
+*/
+.signup-wrapper {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+.signup-wrapper label {
+    font-size: 1.2em;
+    padding: 0;
+    display: block;
+}
+.signup-wrapper input {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 40%;
+    min-width: 300px;
+    min-height: 45px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.signup-wrapper button {
+    padding: 10px 30px;
+    height: auto !important;
+    margin-top: 30px;
+    background-color: #FFCF56 !important;
+    color: #333 !important;
 }
 
 /*

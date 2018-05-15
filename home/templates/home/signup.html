@@ -1,19 +1,38 @@
-{% block content %}
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {% for field in form %}
-      <p>
-        {{ field.label_tag }}<br>
-        {{ field }}
-        {% if field.help_text %}
-          <small style="color: grey">{{ field.help_text }}</small>
-        {% endif %}
-        {% for error in field.errors %}
-          <p style="color: red">{{ error }}</p>
-        {% endfor %}
-      </p>
-    {% endfor %}
-    <button type="submit">Sign up</button>
-  </form>
-{% endblock %}
+{% load static %}
+
+{% include "home/includes/head.html" %}
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+
+    {% include "home/includes/navbar.html" %}
+
+    <main class="mdl-layout__content">
+        <div class="content-wrapper">
+            <div class="grid-container signup-wrapper">
+                {% block content %}
+                    <h1>Sign up</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <p>
+                                {{ field.label_tag }}<br>
+                                {{ field }}
+                                {% for error in field.errors %}
+                                    <p style="color: red">{{ error }}</p>
+                                {% endfor %}
+                            </p>
+                        {% endfor %}
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">Sign up</button>
+                    </form>
+                {% endblock %}
+            </div>
+
+            <div class="non-fixed-footer">
+                {% include "home/includes/footer.html" %}
+            </div>
+
+        </div>
+    </main>
+</div>
+
+{% include "home/includes/scripts.html" %}
