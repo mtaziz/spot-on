@@ -20,7 +20,7 @@ jQuery(function($) {
     function scrollPage() {
         $('#fullpage').fullpage({
             //Navigation
-            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            anchors: ['spot-on', 'about-us', 'our-team', 'feedback'],
 			navigation: true,
             sectionsColor: ['#963D5A', '#40798C', '#104F55', '#4D243D'],
 			navigationPosition: 'right',

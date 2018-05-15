@@ -138,27 +138,27 @@
         <!-- feedback container -->
         <div class="section" id="contact">
             <div class="grid-container">
-                <div class="grid-25">
-                    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Give Us Feedback! ---> </span></div>
-
+                <div class="grid-40 feedback-header">
+                    <h2>Give Us Your Feedback!</h2>
                 </div>
-                <div class="grid-75">
-                    <form action="">
+
+                <div class="grid-60">
+                    <form action="" class="feedback-form">
                         <div>
                             <label>Name</label>
-                            <input class="w3-input" type="text" name="Name" required>
+                            <input class="feedback-input" type="text" name="Name" required>
                         </div>
                         <div>
                             <label>Email</label>
-                            <input class="w3-input" type="text" name="Email" required>
+                            <input class="feedback-input" type="email" name="Email" required>
                         </div>
                         <div>
                             <label>Message</label>
-                            <input class="w3-input" type="text" name="Message" required>
+                            <textarea rows="5" class="feedback-input" type="text" name="Message" required></textarea>
                         </div>
                         <input type="checkbox" checked name="Like">
-                        <label>I Like it!</label>
-                        <button id="myBtn" onclick="javascript:alert('Thank you!')">Send</button>
+                        <label>I Like it!</label><br />
+                        <button class="feedback-submit">Send your feedback!</button>
                     </form>
                 </div>
             </div>
