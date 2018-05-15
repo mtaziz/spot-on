@@ -44,6 +44,7 @@ jQuery(function($) {
 
 
             lazyLoading: true,
+            responsiveWidth: 1024,
 
         });
     }

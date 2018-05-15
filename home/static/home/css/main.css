@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*
 *
 * Nav bar
@@ -222,10 +227,12 @@ span.label-info span {
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
+/*
+*
+*
+* Intro page
+*/
 .section {
     color: #fff;
 }
@@ -307,6 +314,21 @@ img {
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #fff !important;
+}
+@media only screen and (max-width: 1024px) {
+    .team-member {
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .start-exploring {
+        padding: 15px 25px;
+        font-size: 1.2em;
+    }
+    .team-member .demo-card-wide {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /*
