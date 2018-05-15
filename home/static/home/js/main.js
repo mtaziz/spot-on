@@ -56,7 +56,6 @@ jQuery(function($) {
     }
 
     $(document).ready(function() {
-        AOSinit();
         footerReposition();
         loadPage();
         scrollPage();

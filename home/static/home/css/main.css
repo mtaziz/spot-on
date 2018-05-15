@@ -2,6 +2,9 @@
 *
 * main components
 */
+body {
+    opacity: 0;
+}
 .content-wrapper {
     margin: 0 auto;
 }
@@ -207,7 +210,7 @@ span.label-info span {
 */
 .mdl-mini-footer {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     color: white !important;
