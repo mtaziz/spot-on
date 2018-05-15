@@ -213,6 +213,11 @@ span.label-info span {
     color: #932F6D !important;
 }
 
+.result-grid .mdl-card__supporting-text p {
+    line-height: 2;
+    margin: 0;
+}
+
 
 /*
 *

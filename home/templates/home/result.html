@@ -25,6 +25,18 @@
                                         <h2 class="product-name">{{ product.product_name }}</h2>
                                         <hr />
                                         <p>{{ product.product_subtitle }}</p>
+                                        <p>
+                                            <strong>{{ product.product_price }}</strong>
+                                        </p>
+                                        {% if product.product_stock == "True" %}
+                                            <p>
+                                                In Stock!
+                                            </p>
+                                        {% else %}
+                                            <p>
+                                                Out of Stock!
+                                            </p>
+                                        {% endif %}
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
                                         <a target="_blank" href="{{ product.product_url}}" class="view-product mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
