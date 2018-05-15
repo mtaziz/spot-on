@@ -23,6 +23,10 @@ img {
     color: #333;
 }
 
+.mdl-layout__header-row .mainpage-nav .mdl-navigation__link {
+    color: #424242;
+}
+
 #navbar {
     position: fixed;
     z-index: 100;
