@@ -386,6 +386,53 @@ span.label-info span {
 /*
 *
 *
+Log in
+*/
+.login-wrapper {
+    text-align: center;
+}
+
+.login-wrapper form p label,
+.login-wrapper form p input {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 40%;
+    min-width: 300px;
+}
+.login-wrapper form p label {
+    font-size: 1.2em;
+    padding: 20px 0;
+}
+
+.login-wrapper form p input {
+    min-height: 45px;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+.login-wrapper form button,
+.login-wrapper form a {
+    padding: 10px 30px;
+    height: auto !important;
+    margin-top: 30px;
+}
+
+.login-wrapper form button {
+    color: #fff !important;
+    background-color: #1F7A8C !important;
+}
+
+.login-wrapper form a {
+    color: #333 !important;
+    background-color: #FFCF56 !important;
+    margin-left: 20px;
+}
+
+/*
+*
+*
 Misc
 */
 .text-center {

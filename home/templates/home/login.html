@@ -1,11 +1,29 @@
+{% load static %}
 
-{% block title %}Login{% endblock %}
+{% include "home/includes/head.html" %}
 
-{% block content %}
-  <h2>Login</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
-{% endblock %}
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+
+    {% include "home/includes/navbar.html" %}
+
+    <main class="mdl-layout__content">
+        <div class="content-wrapper">
+            <div class="grid-container login-wrapper">
+                {% block content %}
+                    <h1>Log In</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">Login</button>
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="/signup">Don't have an account? Sign up!</a>
+                    </form>
+                {% endblock %}
+            </div>
+
+            {% include "home/includes/footer.html" %}
+
+        </div>
+    </main>
+</div>
+
+{% include "home/includes/scripts.html" %}
