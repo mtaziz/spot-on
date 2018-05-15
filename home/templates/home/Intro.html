@@ -16,48 +16,6 @@
         </div>
     </div>
 
-    <!-- Team Container -->
-    <div class="second-section section" id="team" >
-        <div class="grid-container">
-            <h1 class="text-center section-header">Meet the team!</h1>
-            <div class="grid-33">
-                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <img src={% static '/home/images/john.jpg' %} alt="JohnAsare">
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <h3>John Asare</h3>
-                        <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-33">
-                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <img src={% static 'home/images/Jon.jpg' %} alt="Diaz">
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <h3>Jon Diaz </h3>
-                        <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-33">
-                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <img src={% static 'home/images/Nga.jpg' %} alt="Lam">
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <h3>Lam Nguyen</h3>
-                        <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Work Row -->
     <div class="section w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
@@ -100,6 +58,49 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- Team Container -->
+    <div class="second-section section" id="team" >
+        <h1 class="text-center section-header">Meet the team!</h1>
+
+        <div class="grid-container">
+            <div class="grid-33 tablet-grid-33 mobile-grid-33 team-member">
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <img src={% static '/home/images/john.jpg' %} alt="JohnAsare">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h3>John Asare</h3>
+                        <p>Front-end <br> <i> Takes care of the entire HTML and the CSS implementation. Also the document the software documentation and architecture design. </i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-33 tablet-grid-33 mobile-grid-33 team-member">
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <img src={% static 'home/images/Jon.jpg' %} alt="Diaz">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h3>Jon Diaz </h3>
+                        <p>Database <br> <i> Takes care of the entire database. Use SQL to modified and implements the SQL interaction. Manages and update the database </i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-33 tablet-grid-33 mobile-grid-33 team-member">
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <img src={% static 'home/images/Nga.jpg' %} alt="Lam">
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <h3>Lam Nguyen</h3>
+                        <p>Back-end <br> <i>Handles all the job at the back-end. Takes finished front-end and database work and gives it a working functionality. Also, database creation, integration and management.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- feedback container -->

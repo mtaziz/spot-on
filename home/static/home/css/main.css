@@ -228,9 +228,35 @@ img {
 .start-exploring:hover {
     opacity: 0.95;
 }
-
-.demo-card-wide {
-    width: 100% !important;
+.team-member .demo-card-wide {
+    max-width: 350px !important;
+    background-image: url('/static/home/images/stars-background.png');
+    background-size: 150%;
+}
+.demo-card-wide .mdl-card__title {
+    height: 200px;
+}
+.demo-card-wide .mdl-card__title img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.team-member:nth-child(2n+1) .demo-card-wide {
+    background-color: #4D9078 !important;
+}
+.team-member:nth-child(2n+2) .demo-card-wide {
+    background-color: #F7C548 !important;
+}
+.team-member:nth-child(2n+2) .demo-card-wide .mdl-card__supporting-text {
+    color: #333;
+}
+.team-member:nth-child(2n+3) .demo-card-wide {
+    background-color: #B4436C !important;
+}
+.team-member .mdl-card__supporting-text {
+    padding: 0 30px 10px !important;
+    color: #fff;
+    width: auto !important;
 }
 
 /*
@@ -243,5 +269,5 @@ Misc
 }
 
 .section-header {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
