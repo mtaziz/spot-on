@@ -116,20 +116,19 @@ span.label-info span {
 }
 .demo-card-square.mdl-card {
     width: 100%;
-    height: 100%;
 }
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
-    height: 100%;
+    position: relative;
 }
 .mdl-card__supporting-text {
-    width: 100% !important;
     padding: 25px !important;
 }
 
 .mdl-card__supporting-text hr {
-    border-bottom: 2px solid;
+    border-top: 2px solid !important;
+    width: 90%;
 }
 
 .product-name {
@@ -228,4 +227,21 @@ img {
 }
 .start-exploring:hover {
     opacity: 0.95;
+}
+
+.demo-card-wide {
+    width: 100% !important;
+}
+
+/*
+*
+*
+Misc
+*/
+.text-center {
+    text-align: center;
+}
+
+.section-header {
+    padding-bottom: 50px;
 }
