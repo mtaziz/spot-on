@@ -139,23 +139,22 @@ span.label-info span {
 }
 .search-button {
     border: none;
-    font-family: inherit;
-    font-size: inherit;
-    color: #fff;
-    background-color: #932F6D;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    height: auto !important;
+    color: #fff !important;
+    background-color: #932F6D !important;
     cursor: pointer;
-    display: block;
-    width: 50%;
-    margin: 50px auto;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+    display: block !important;
+    margin: 50px auto !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
     outline: none;
     position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    padding: 25px 60px;
+    padding: 25px 60px !important;
 
 }
 .search-button:hover {
@@ -203,8 +202,8 @@ span.label-info span {
     margin: 0 auto;
 }
 
-.mdl-button {
-    color: #f06060 !important;
+.mdl-button.view-product {
+    color: #932F6D !important;
 }
 
 
