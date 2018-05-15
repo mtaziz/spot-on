@@ -13,11 +13,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+.mdl-layout__content {
+    padding-top: 55px;
+}
 
 /*
 *
 * Nav bar
 */
+.main-navbar {
+    position: fixed !important;
+}
+
+.main-navbar .mdl-layout-title,
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
     color: #333;
@@ -46,9 +54,6 @@ img {
     display: inline-block;
     padding: 15px;
 }
-#navbar .right-menu li {
-
-}
 
 #navbar a {
     color: #fff;
@@ -73,16 +78,18 @@ img {
     cursor: pointer;
 }
 
-
 .material-icons {
     line-height: 42px !important;
     color: black;
 }
 
 .mdl-layout__header--transparent.mdl-layout__header--transparent {
-    background-color: grey;
     color: white;
     box-shadow: none;
+}
+
+.mdl-layout__drawer-button {
+    margin: 11px 12px !important;
 }
 
 /*

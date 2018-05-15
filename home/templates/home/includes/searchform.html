@@ -2,7 +2,7 @@
 
 <div class="search-box-container-wrapper">
     <div class="search-box-container">
-        <img class="spoton-logo" src="{% static 'home/images/icon.png' %}" />
+        <a href="/"><img class="spoton-logo" src="{% static 'home/images/icon.png' %}" /></a>
         <form id="search-box" action="/result/" method="post">
             {% csrf_token %}
             {{ form }}
