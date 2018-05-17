@@ -25,6 +25,10 @@ img {
     position: fixed !important;
 }
 
+.main-navbar a {
+    text-decoration: none;
+}
+
 .main-navbar .mdl-layout-title,
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
