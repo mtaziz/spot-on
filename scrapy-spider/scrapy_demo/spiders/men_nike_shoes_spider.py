@@ -25,7 +25,7 @@ class NikeShoesSpider(scrapy.Spider):
         outer_data = json.loads(response.body)
         inner_data = outer_data.get('sections', [{}])[0]
 
-        for item in inner_data.get('products', []):
+        for item in inner_data.get('items', []):
             element = NikeShoesItem()
 
             element['product_name'] = item.get('title')
